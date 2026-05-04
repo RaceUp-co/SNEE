@@ -132,14 +132,50 @@
           }
         }
       }, {
-        rootMargin: '0px 0px -15% 0px',
-        threshold: 0.05
+        rootMargin: '0px 0px -10% 0px',
+        threshold: 0
       });
       targets.forEach((el) => io.observe(el));
+
+      // Filet de sécurité : si un élément reste caché 4 s après l'arrivée
+      // dans le viewport (rare mais possible sur certains layouts inline),
+      // on force le reveal pour éviter tout contenu invisible.
+      setTimeout(() => {
+        targets.forEach((el) => {
+          if (!el.classList.contains('is-visible')) {
+            const r = el.getBoundingClientRect();
+            const inView = r.top < window.innerHeight && r.bottom > 0;
+            if (inView) {
+              el.classList.add('is-visible');
+              io.unobserve(el);
+            }
+          }
+        });
+      }, 4000);
     } else {
       // Fallback navigateurs très anciens
       targets.forEach((el) => el.classList.add('is-visible'));
     }
+
+    // Dernier filet : sur scroll, tout élément déjà passé à l'écran et
+    // toujours non-révélé est forcé visible.
+    let scrollSafetyTicking = false;
+    const safetyOnScroll = () => {
+      if (scrollSafetyTicking) return;
+      scrollSafetyTicking = true;
+      requestAnimationFrame(() => {
+        targets.forEach((el) => {
+          if (!el.classList.contains('is-visible')) {
+            const r = el.getBoundingClientRect();
+            if (r.top < window.innerHeight * 0.95) {
+              el.classList.add('is-visible');
+            }
+          }
+        });
+        scrollSafetyTicking = false;
+      });
+    };
+    window.addEventListener('scroll', safetyOnScroll, { passive: true });
   }
 
   /* ---------------------------------------------------------
