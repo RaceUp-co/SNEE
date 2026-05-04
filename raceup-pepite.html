@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="description" content="RaceUp — Candidature au Statut National Étudiant Entrepreneur, Pépite Grand Est 2026. Agence digitale fondée à Reims." />
+<meta name="theme-color" content="#faf8f5" />
+<title>RaceUp · Candidature SNEE — Pépite Grand Est 2026</title>
+
+<!-- Google Fonts : Instrument Serif (display) + DM Sans (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+
+<!-- Splitting.js (CSS) -->
+<link rel="stylesheet" href="https://unpkg.com/splitting@1.0.6/dist/splitting.css" />
+
+<!-- Styles internes -->
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+
+<body>
+
+<!-- ============================================================
+     CURSEUR CUSTOM (désactivé sur tactile via media query)
+============================================================ -->
+<div class="cursor" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<!-- ============================================================
+     NAV — fixe, ultra sobre
+============================================================ -->
+<nav class="nav" aria-label="Navigation principale">
+  <a href="#" class="nav__logo" data-cursor>
+    <span class="dot" aria-hidden="true"></span>
+    RaceUp
+  </a>
+  <div class="nav__meta">
+    Pépite Grand Est <span>·</span> 2026
+  </div>
+</nav>
+
+<main>
+
+<!-- ============================================================
+     SECTION 1 — HERO
+============================================================ -->
+<section class="hero container">
+
+  <div class="hero__top">
+    <div class="hero__location">
+      <span class="hero__pulse" aria-hidden="true"></span>
+      Reims · 51100 · France
+    </div>
+    <div class="hero__year">
+      Candidature&nbsp;<em>2026</em>
+    </div>
+  </div>
+
+  <h1 class="hero__title" aria-label="Agence digitale.">
+    <span class="line"><span class="split" data-text="Agence">Agence</span></span>
+    <span class="line"><span class="split" data-text="digitale.">digitale.</span></span>
+  </h1>
+
+  <div class="hero__subtitle">
+    <p class="hero__context fade-up">
+      <strong>Fondée à Reims</strong><br/>
+      BUT Informatique <span style="opacity:.4">·</span> Étudiant entrepreneur<br/>
+      Web <span style="opacity:.4">·</span> IA <span style="opacity:.4">·</span> Sur-mesure
+    </p>
+
+    <div class="hero__stats fade-up" aria-label="Statistiques de l'agence">
+      <div class="stat">
+        <div class="stat__num">
+          <span data-counter data-target="8">0</span><span class="plus">+</span>
+        </div>
+        <div class="stat__label">Clients<br/>accompagnés</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num">
+          <span data-counter data-target="3">0</span><span class="plus">+</span>
+        </div>
+        <div class="stat__label">Domaines<br/>maîtrisés</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__bottom">
+    <div class="scroll-cue fade-in">
+      <span class="scroll-cue__arrow" aria-hidden="true"></span>
+      <span>Scroll</span>
+    </div>
+    <div class="hero__signature fade-in">
+      <em>Lucas Jacques</em>
+    </div>
+  </div>
+
+  <div class="hero__ghost" aria-hidden="true">R</div>
+</section>
+
+<!-- ============================================================
+     SECTION 2 — L'ENTREPRISE
+============================================================ -->
+<section class="section container" id="entreprise">
+
+  <header class="section__head">
+    <div class="eyebrow fade-in">01 — Activité</div>
+    <h2 class="section__lede fade-up">
+      RaceUp conçoit des solutions digitales pour les entrepreneurs qui ont besoin d'un
+      <em class="serif-italic">partenaire technique</em>, pas d'un prestataire.
+    </h2>
+  </header>
+
+  <div class="pillars">
+    <article class="pillar fade-up">
+      <span class="pillar__num">01</span>
+      <h3 class="pillar__title">Web &amp; E-commerce</h3>
+      <p class="pillar__desc">
+        Sites vitrines, boutiques en ligne, intégrations paiement (Stripe), tunnels d'achat
+        complets. Performance et conversion comme priorité.
+      </p>
+    </article>
+    <article class="pillar fade-up">
+      <span class="pillar__num">02</span>
+      <h3 class="pillar__title">Intelligence Artificielle</h3>
+      <p class="pillar__desc">
+        Chatbots métier, automatisations (n8n), assistants spécialisés et solutions IA
+        sur-mesure pour fluidifier les opérations clients.
+      </p>
+    </article>
+    <article class="pillar fade-up">
+      <span class="pillar__num">03</span>
+      <h3 class="pillar__title">Blockchain &amp; Apps</h3>
+      <p class="pillar__desc">
+        Interfaces avancées, dashboards techniques, kits UI/UX. Là où la donnée et le produit
+        deviennent une expérience.
+      </p>
+    </article>
+  </div>
+
+  <div class="realisations">
+    <article class="realisation fade-up">
+      <div class="realisation__tag">Réalisation 01 · E-commerce</div>
+      <h4 class="realisation__title">The Goam</h4>
+      <p class="realisation__desc">
+        Site e-commerce de vêtements sport. Paiement Stripe intégré, système de livraison,
+        catalogue produit dynamique et front-end optimisé.
+      </p>
+      <a href="https://thegoam.jacqueslucas-m2101.workers.dev" target="_blank" rel="noopener noreferrer"
+         class="realisation__link" data-cursor aria-label="Voir le site The Goam">
+        thegoam.jacqueslucas-m2101.workers.dev
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M7 17L17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </article>
+    <article class="realisation fade-up">
+      <div class="realisation__tag">Réalisation 02 · Vitrine agence</div>
+      <h4 class="realisation__title">race-up.net</h4>
+      <p class="realisation__desc">
+        Site officiel RaceUp. Vitrine de l'agence, présentation des services, témoignages
+        clients réels et point de contact commercial.
+      </p>
+      <a href="https://race-up.net" target="_blank" rel="noopener noreferrer"
+         class="realisation__link" data-cursor aria-label="Voir le site race-up.net">
+        race-up.net
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M7 17L17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </article>
+    <article class="realisation fade-up">
+      <div class="realisation__tag">Réalisation 03 · SaaS B2B</div>
+      <h4 class="realisation__title">PomEdin</h4>
+      <p class="realisation__desc">
+        Plateforme de gestion de stock pour le secteur agricole B2B. Interface multilingue,
+        workflows métiers, suivi des inventaires en temps réel.
+      </p>
+      <a href="https://pomedin.netlify.app/fr" target="_blank" rel="noopener noreferrer"
+         class="realisation__link" data-cursor aria-label="Voir le site PomEdin">
+        pomedin.netlify.app
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M7 17L17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </article>
+    <article class="realisation fade-up">
+      <div class="realisation__tag">Réalisation 04 · Don associatif</div>
+      <h4 class="realisation__title">BinHarry — BDE BUT Info</h4>
+      <p class="realisation__desc">
+        Site officiel du BDE du BUT Informatique. Réalisé gracieusement, en tant que membre du
+        bureau&nbsp;: pas de rémunération, par cohérence avec la mission associative.
+      </p>
+      <a href="https://binharry.com" target="_blank" rel="noopener noreferrer"
+         class="realisation__link" data-cursor aria-label="Voir le site BinHarry">
+        binharry.com
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M7 17L17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 3 — L'ENTREPRISE (équipe, vision, organigramme)
+============================================================ -->
+<section class="section section--surface" id="entreprise-vision">
+  <div class="container">
+    <header class="section__head">
+      <div class="eyebrow fade-in">02 — L'entreprise</div>
+    </header>
+
+    <figure class="quote">
+      <span class="quote__mark" aria-hidden="true">&ldquo;</span>
+      <blockquote class="quote__text line-reveal">
+        We need to <em>keep reaching higher.</em>
+      </blockquote>
+    </figure>
+
+    <div class="founder-cols">
+      <div class="founder-col fade-up">
+        <h3 class="founder-col__title">Maintenant</h3>
+        <ul class="founder-col__list">
+          <li>Entreprise EI de développement IT</li>
+          <li>Prestataire un peu éparpillé</li>
+          <li>Quelques clients et affiliés</li>
+        </ul>
+      </div>
+      <div class="founder-col fade-up">
+        <h3 class="founder-col__title">Projets d'avenir</h3>
+        <ul class="founder-col__list founder-col__list--nested">
+          <li>
+            <span>Holding SAS</span>
+            <ul class="founder-sub">
+              <li>SCI immobilière</li>
+              <li>SASU Développement IT</li>
+            </ul>
+          </li>
+          <li>Réfléchir à la fidélisation client</li>
+          <li>Créer de vrais produits concrets <em>(Gainztracker…)</em></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         ORGANIGRAMME — recréé en HTML/CSS, intégré au design system
+    ============================================================ -->
+    <div class="org" aria-label="Organigramme RaceUp">
+      <div class="org__head fade-in">
+        <div class="eyebrow" style="justify-content:flex-start">Organigramme</div>
+        <p class="org__intro">
+          Une équipe structurée autour de deux pôles&nbsp;: <em>Growth</em> et <em>Tech</em>.
+        </p>
+      </div>
+
+      <!-- Niveau 1 : fondateur -->
+      <div class="org__level org__level--top fade-up">
+        <div class="org-card org-card--head" data-cursor>
+          <span class="org-card__role">Fondateur</span>
+          <span class="org-card__name">Lucas Jacques</span>
+        </div>
+      </div>
+
+      <!-- Niveau 2 : pôles -->
+      <div class="org__level org__level--poles">
+        <!-- Pôle Growth -->
+        <div class="org__pole fade-up">
+          <div class="org__pole-label">
+            <span class="org__pole-dot" aria-hidden="true"></span>
+            Pôle Growth
+          </div>
+          <div class="org__pole-cards">
+            <div class="org-card" data-cursor>
+              <span class="org-card__name">Loiseau Alan</span>
+              <span class="org-card__role">Setter / Closer</span>
+            </div>
+            <div class="org-card" data-cursor>
+              <span class="org-card__name">Audace Ethan</span>
+              <span class="org-card__role">Chargé Marketing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pôle Tech -->
+        <div class="org__pole fade-up">
+          <div class="org-card org-card--sub" data-cursor>
+            <span class="org-card__role">Co-fondateur</span>
+            <span class="org-card__name">Thiefain Jules</span>
+            <span class="org-card__meta">Dev &amp; Designer</span>
+          </div>
+          <div class="org__pole-label">
+            <span class="org__pole-dot" aria-hidden="true"></span>
+            Pôle Tech
+          </div>
+          <div class="org__pole-cards">
+            <div class="org-card" data-cursor>
+              <span class="org-card__name">Ferrera Khalil</span>
+              <span class="org-card__role">Dev Frontend</span>
+            </div>
+            <div class="org-card" data-cursor>
+              <span class="org-card__name">Eddaoudi Wiame</span>
+              <span class="org-card__role">Dev Frontend</span>
+            </div>
+            <div class="org-card" data-cursor>
+              <span class="org-card__name">Fleuret Germain</span>
+              <span class="org-card__role">Dev Backend</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 4 — LE STATUT SNEE
+============================================================ -->
+<section class="section container" id="snee">
+
+  <header class="section__head">
+    <div class="eyebrow fade-in">03 — Mes motivations</div>
+    <h2 class="section__title fade-up">
+      Mes <em class="display-italic">motivations.</em>
+    </h2>
+  </header>
+
+  <ol class="snee-list">
+    <li class="snee-item">
+      <span class="snee-item__num line-reveal">01</span>
+      <h3 class="snee-item__title line-reveal">Accompagnement structuré</h3>
+      <p class="snee-item__desc line-reveal">
+        Sortir de l'isolation entrepreneuriale. Avoir des mentors, des méthodes,
+        un suivi régulier qui structure ma manière d'avancer.
+      </p>
+    </li>
+    <li class="snee-item">
+      <span class="snee-item__num line-reveal">02</span>
+      <h3 class="snee-item__title line-reveal">Réseau local</h3>
+      <p class="snee-item__desc line-reveal">
+        S'ancrer dans l'écosystème Reims / Grand Est. Trouver de vrais
+        partenaires entrepreneuriaux, pas des prospects.
+      </p>
+    </li>
+    <li class="snee-item">
+      <span class="snee-item__num line-reveal">03</span>
+      <h3 class="snee-item__title line-reveal">Compatibilité études</h3>
+      <p class="snee-item__desc line-reveal">
+        Gérer le BUT Informatique et RaceUp sans sacrifier l'un pour l'autre.
+        Le statut crée le cadre légal et académique pour cela.
+      </p>
+    </li>
+    <li class="snee-item">
+      <span class="snee-item__num line-reveal">04</span>
+      <h3 class="snee-item__title line-reveal">Crédibilité</h3>
+      <p class="snee-item__desc line-reveal">
+        Le statut SNEE formalise ce que je fais déjà. Il m'aide à exister
+        institutionnellement, à être reconnu et pris au sérieux.
+      </p>
+    </li>
+  </ol>
+</section>
+
+<!-- ============================================================
+     SECTION 5 — OBJECTIFS / ROADMAP
+============================================================ -->
+<section class="section container" id="objectifs">
+
+  <header class="section__head">
+    <div class="eyebrow fade-in">04 — Objectifs</div>
+    <h2 class="section__title fade-up">
+      Ce que <em class="display-italic">je construis.</em>
+    </h2>
+    <p class="section__lede fade-up" style="font-style:italic;color:var(--text-muted);max-width:38ch">
+      Une vision <strong style="color:var(--text);font-style:normal;font-family:var(--font-body);font-weight:500;letter-spacing:0.18em;text-transform:uppercase;font-size:0.65em">long terme</strong> &mdash; quatre horizons, un même cap.
+    </p>
+  </header>
+
+  <div class="timeline">
+    <div class="timeline__track">
+      <span class="timeline__line scale-x-line" aria-hidden="true"></span>
+
+      <article class="milestone fade-up">
+        <div class="milestone__time">Maintenant</div>
+        <h3 class="milestone__title">Structurer</h3>
+        <p class="milestone__desc">
+          SNEE · Mettre en place les fondations RaceUp · Fidéliser les clients actuels.
+        </p>
+      </article>
+
+      <article class="milestone fade-up">
+        <div class="milestone__time">6 mois</div>
+        <h3 class="milestone__title">Formaliser</h3>
+        <p class="milestone__desc">
+          Passage en SAS · Partenariats tech long terme · Dashboard client en bêta.
+        </p>
+      </article>
+
+      <article class="milestone fade-up">
+        <div class="milestone__time">12 mois</div>
+        <h3 class="milestone__title">Étendre</h3>
+        <p class="milestone__desc">
+          Création d'une holding · Premières structures satellites (SCI) ·
+          Premiers recrutements ciblés.
+        </p>
+      </article>
+
+      <article class="milestone fade-up">
+        <div class="milestone__time">Long terme</div>
+        <h3 class="milestone__title">Asseoir</h3>
+        <p class="milestone__desc">
+          RaceUp comme revenu principal · Multi-entreprises ·
+          Diversification immobilière.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 6 — POURQUOI PÉPITE / Visite & remerciements
+============================================================ -->
+<section class="section section--surface" id="motivation">
+  <div class="container">
+
+    <header class="section__head" style="text-align:center;align-items:center">
+      <div class="eyebrow fade-in" style="justify-content:center">05 — Une rencontre déjà commencée</div>
+    </header>
+
+    <div class="why">
+      <p class="why__statement line-reveal">
+        J'ai déjà visité les locaux,<br/>
+        échangé avec quelques personnes,<br/>
+        et j'y ai trouvé un endroit <strong>vraiment agréable.</strong>
+      </p>
+    </div>
+
+    <div class="why-cards">
+      <article class="why-card fade-up">
+        <div class="why-card__num">i.</div>
+        <h3 class="why-card__title">Une visite</h3>
+        <p class="why-card__desc">
+          Je suis venu sur place. J'ai pu voir les bureaux, les espaces de
+          coworking, comprendre le quotidien des entrepreneurs accompagnés.
+        </p>
+      </article>
+      <article class="why-card fade-up">
+        <div class="why-card__num">ii.</div>
+        <h3 class="why-card__title">Des rencontres</h3>
+        <p class="why-card__desc">
+          J'ai pu échanger avec plusieurs membres de l'équipe et d'autres
+          étudiants entrepreneurs. Le contact a été simple, sincère, motivant.
+        </p>
+      </article>
+      <article class="why-card fade-up">
+        <div class="why-card__num">iii.</div>
+        <h3 class="why-card__title">Un cadre</h3>
+        <p class="why-card__desc">
+          L'endroit donne envie d'y travailler. C'est exactement le type
+          d'environnement que je cherchais pour faire grandir RaceUp.
+        </p>
+      </article>
+    </div>
+
+    <div class="thanks fade-up">
+      <p class="thanks__text">
+        Merci sincèrement de m'avoir <em>écouté.</em>
+      </p>
+      <p class="thanks__sign">— Lucas Jacques</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="footer">
+  <div class="footer__left">
+    RaceUp <span style="opacity:.4">·</span> Reims <span style="opacity:.4">·</span> 2026
+  </div>
+  <a href="https://race-up.net" target="_blank" rel="noopener noreferrer"
+     class="footer__center" data-cursor aria-label="Site RaceUp">
+    race-up.net
+  </a>
+  <div class="footer__right">
+    Pépite Grand Est <span style="opacity:.4">·</span> Candidature SNEE
+  </div>
+</footer>
+
+</main>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/splitting@1.0.6/dist/splitting.min.js" defer></script>
+<script src="assets/main.js" defer></script>
+
+</body>
+</html>
